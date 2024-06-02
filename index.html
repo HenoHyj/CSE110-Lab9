@@ -153,7 +153,7 @@
         output.innerHTML = `Error: ${error.message}`;
         TrackJS.track('CalculatorError: ' + error.message);
       } 
-      
+
       finally {
         console.log('Done with one calculation');
       }
@@ -191,7 +191,7 @@
             break;
 
           case 'Console Assert':
-            console.assert(false, 'This is a console assert message.'); // Fails assertion
+            console.assert(false, 'This is a console assert message.');
             break;
 
           case 'Console Clear':
@@ -237,7 +237,7 @@
             break;
 
           case 'Trigger a Global Error':
-            notExistFunction();
+            randomUndefinedFunction();
             break;
 
           default:
