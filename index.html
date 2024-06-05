@@ -159,9 +159,9 @@
       }
     });
 
-    // Add event listener for global errors
+    // Step 5 - The Global Error handler and 3rd Party Tracking
     window.onerror = function(message, source, lineno, colno, error) {
-      console.error('Global error caught:', message);
+      console.error('Global error caught: ', message);
       TrackJS.track('Global error caught: ' + message);
     };
 
